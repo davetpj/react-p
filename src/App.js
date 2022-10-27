@@ -26,9 +26,15 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    // 아마 여기서 데이터를 위에 있는거랑 합쳐서 넘겨주지 않을까?
+    console.log("In App.js");
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );

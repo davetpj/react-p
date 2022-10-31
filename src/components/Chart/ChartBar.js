@@ -1,5 +1,6 @@
-import React from "react";
 import "./ChartBar.css";
+
+import React from "react";
 
 const ChartBar = (props) => {
   let barFillHeight = "0%";
@@ -12,8 +13,9 @@ const ChartBar = (props) => {
     <div className="chart-bar">
       <div className="chart-bar__inner">
         <div
-          className="chart-bar__fill"
-          style={{ height: barFillHeight }}
+  className = "chart-bar__fill"
+          style={{
+    height: barFillHeight }}
         ></div>
       </div>
       <div className="chart-bar__label">{props.label}</div>
